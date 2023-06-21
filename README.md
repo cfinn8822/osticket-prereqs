@@ -70,6 +70,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 !! Attention !! If this happens, choose to"Keep" the file: 
 
 <img src="https://i.imgur.com/sYQQREy.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+11)Once you have downloaded and extracted the zip file into the PHP folder on the C:\ Drive,download and install the VC_redist.x86.exe from the installtion files.Go through the setup wizard to finish setting up and installing the VC_redist.x86.exe
+
+12)Download and install MYSQL5.5.62(mysql-5.5.62-win32.msi) and run the setup wizard:(Typical Setup->Launch Configuration Wizard) & after install (Standard Configuration)
+
+*Make a new root password.
+
+<img src="https://i.imgur.com/EL78CGb.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
