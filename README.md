@@ -84,14 +84,107 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img src="https://i.imgur.com/CHCT6xh.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
+14)We will now want to register PHP from within (IIS).Click on the PHP Manager.
 
-</p>
+
+-Register new PHP Version.
+
 <br />
+<img src="https://i.imgur.com/Yj6Kn49.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />ereqs
+-You will now need to prodive a path to the PHP executable file (php-cgi.exe).Go to the C:\ Drive -> PHP -> click on the(php-cgi) file.
+
+
+<img src="https://i.imgur.com/9Z3LfF1.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Restart the IIS server.
+
+<img src="https://i.imgur.com/wf8aZ2w.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+15)Now its time to install OS Ticket v1.15.8.Download OS Ticket from the installtion files folder.Extract and copy the "upload" folder to C:\\inetub\wwwroot.Rename "upload" file to "os ticket".
+
+-Reload the IIS again.
+
+16)On the IIS page go to sites->default->os ticket- on the right side of page ,click "Browse *80".
+
+<img src="https://i.imgur.com/G883nNR.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Some extensions are not enabled on the OS Ticket browser.
+
+<img src="https://i.imgur.com/XWbtyB6.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-To enable the extensions-Go back to the IIS,sites->default->os ticket- double click PHP Manager-Click"Enable or Disable an extension.
+
+<img src="https://i.imgur.com/Nbo8wOL.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-We will want to enable 3 extensions from here:
+
+-php_imap.dll
+
+-php_intl.dll
+
+-php_opcache.dll
+
+<img src="https://i.imgur.com/aLyCZMY.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+17)Once we have those extensions enabled in IIS,we are going to want to rename one of the files in our OS Ticket folder.Go into the file explorer and search for C:\inetpub\wwwroot\os ticket\include\ost-sampleconfig.php
+
+-We are going to rename the ost-sampleconfig.php to ost-config.php
+
+18)Now that we have renamed the file,right click on the file and go to properties.From there click security,advanced,and disable the inheritance.We will select Remove all inherited permissions from the object.
+
+-Now we add new permissions
+
+-Click add
+
+<img src="https://i.imgur.com/b90NhHK.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Select a principle
+
+<img src="https://i.imgur.com/x1ELnYv.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Type "Everyone" in the box.
+
+<img src="https://i.imgur.com/E5PhpF2.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Make sure Full Control and all the other boxes are checked
+
+<img src="https://i.imgur.com/RW7x2HU.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+-Click Apply and Ok
+
+<img src="https://i.imgur.com/LFqOzoa.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+19)Once that is done we will continue to setup OS Ticketin the browser.Click continue on the browser page.Fill out the page as required except the database setting at the bottom of the page.
+
+20)We will want to download and install HeidiSQL from the installation files.
+
+<img src="https://i.imgur.com/lA4749A.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+21)When the program is open we will create a new session in it.
+
+<img src="https://i.imgur.com/2J7gCKC.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+22)We want to make sure the username is root and the password is Password1.
+
+<img src="https://i.imgur.com/xB4abyq.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+23)Once we are connected to the session we will go back to the browser to finish setting everything up.Under the database settings in the browser the username will be"root" and the password will be"Password1".
+
+24)We will now create a new database within HeidiSQL.In Heidi right click on the left side where is says"Unnamed",select "create new",and then select"database".Name the new database OS Ticket.Once we have the new database setup go back to the OS Ticket browserand under MySQL database type in OS Ticket.
+
+<img src="https://i.imgur.com/EpsV0Gr.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+25)The last step is to do some clean up.We will want to delete the setup folderin our system. Delete:C:\inetpub\wwwwroot\os ticket\setup. Only delete the setup folder and nothing else.
+
+26)We then will want to set the permissions back to "Read" only in the ost-config.php file.
+
+<img src="https://i.imgur.com/YAEHPpx.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<img src="https://i.imgur.com/6iGXmN7.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+27)Congrats if done successfully you should see the login prompt.
+
+<img src="https://i.imgur.com/UkNmOAp.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
