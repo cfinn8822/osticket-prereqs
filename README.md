@@ -78,6 +78,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 *Make a new root password.
 
 <img src="https://i.imgur.com/EL78CGb.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+13)Now that we have downloaded and installed the files,we now want to search for (IIS) in the windows search bar.Open (IIS) as an adminstatrator.
+
+
+<img src="https://i.imgur.com/CHCT6xh.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 </p>
 <br />
 
