@@ -1,4 +1,4 @@
-# osticket-prp align="center">
+
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
@@ -14,7 +14,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10</b> (22H2)
 
 <h2>List of Prerequisites</h2>
 
@@ -31,8 +31,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
+1) The first thing you are going to want to do is create a Virtual Machine by going to https://portal.azure.com/ .
+2) Setup your Virtual Machine with Windows 10 pro, version 22h2.Note you will want to create the (VM) with atleast 2 Vcpus and 8 to 16 gbs of memory.
+3) Once you have created your Virtual Machine you will want to connect to it by opening your (RDC) Remote Desktop Connection tool.
+4) Copy and paste the public ip address of the (VM) you setup. Login by using the username and password you setup when making the (VM).
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/iQxECVe.png.png
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
