@@ -36,7 +36,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 3) Once you have created your Virtual Machine you will want to connect to it by opening your (RDC) Remote Desktop Connection tool.
 4) Copy and paste the public ip address of the (VM) you setup. Login by using the username and password you setup when making the (VM).
 <p>
-<img src=https://i.imgur.com/iQxECVe.png.png
+<img src=https://i.imgur.com/KTDW7r3.png
+<img src=https://i.imgur.com/vnGKP4r.png
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
