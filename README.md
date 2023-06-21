@@ -42,17 +42,34 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 5)Once you have connected to the (VM) you will want to go to your control panel.From there open Programs, then Turn Windows Features On or Off.
 <p>
 
-<img src=https://i.imgur.com/RlZeVAe.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/nYUueMt.png.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 
 6)You will want to install/enable Internet Information Services (IIS) in Windows with CGI and Common HTTP Features.
   -World Wide Web-> Application Development->[x] CGI,[x] Common HTTP Features. *note make sure all common http features are checked.
+
   </p>
 <p>
-<img src=https://i.imgur.com/OMXIeM1.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+<img src=https://i.imgur.com/8Aa1DZW.png.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+  -To make sure the IIS is installed / enabled go to a browser of your choice and search for 127.0.0.1 It should look something like this.
+  
+<img src="https://i.imgur.com/5cE7B8R.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  
+7)From the installtion files ,download and install PHP Manager for (IIS),(PHPManagerForIIS_V1.5.0.msi) Go through the install wizard and complete the install.
+
+8)From the installtion files ,download and install the Rewrite Module.(rewrite_amd64_en-us.msi).
+
+9)Create a folderin the C: Drive and call it PHP
+
+10)From the installtion files, download PHP 7.3.8 (PHP-7.3.8-nts-win32-vc15-x866.zip) and unzip the contents into C:\PHP
+
+!! Attention !! If this happens, choose to"Keep" the file: 
+
+<img src="https://i.imgur.com/sYQQREy.png.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
