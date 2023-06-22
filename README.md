@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-1) The first thing you are going to want to do is create a Virtual Machine by going to https://portal.azure.com/ .
+1) The first thing you are going to want to do is create a Resource Group and  Virtual Machine by going to https://portal.azure.com/ .
 2) Setup your Virtual Machine with Windows 10 pro, version 22h2.Note you will want to create the (VM) with atleast 2 Vcpus and 8 to 16 gbs of memory.
 3) Once you have created your Virtual Machine you will want to connect to it by opening your (RDC) Remote Desktop Connection tool.
 4) Copy and paste the public ip address of the (VM) you setup. Login by using the username and password you setup when making the (VM).
@@ -101,7 +101,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img src="https://i.imgur.com/wf8aZ2w.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
-15)Now its time to install OS Ticket v1.15.8.Download OS Ticket from the installtion files folder.Extract and copy the "upload" folder to C:\\inetub\wwwroot.Rename "upload" file to "os ticket".
+15)Now its time to install osTicket v1.15.8.Download osTicket from the installtion files folder.Extract and copy the "upload" folder to C:\\inetub\wwwroot.Rename "upload" file to "osTicket".{Name has to be "osTicket" spelled exactly the same or at the end of lab you will get a 404 error}.
 
 -Reload the IIS again.
 
