@@ -46,13 +46,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 
 6)You will want to install/enable Internet Information Services (IIS) in Windows with CGI and Common HTTP Features.
+
   -World Wide Web-> Application Development->[x] CGI,[x] Common HTTP Features. *note make sure all common http features are checked.
 
-  </p>
-<p>
+  
 <img src=https://i.imgur.com/8Aa1DZW.png.png height="40%" width="40%" alt="Disk Sanitization Steps"/>
-  </p>
-<p>
+
 
   -To make sure the IIS is installed / enabled go to a browser of your choice and search for 127.0.0.1 It should look something like this.
   
@@ -63,7 +62,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 8)From the installtion files ,download and install the Rewrite Module.(rewrite_amd64_en-us.msi).
 
-9)Create a folderin the C: Drive and call it PHP
+9)Create a folder in the C: Drive and call it PHP
 
 10)From the installtion files, download PHP 7.3.8 (PHP-7.3.8-nts-win32-vc15-x866.zip) and unzip the contents into C:\PHP
 
@@ -101,19 +100,21 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img src="https://i.imgur.com/wf8aZ2w.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
-15)Now its time to install osTicket v1.15.8.Download osTicket from the installtion files folder.Extract and copy the "upload" folder to C:\\inetub\wwwroot.Rename "upload" file to "osTicket".{Name has to be "osTicket" spelled exactly the same or at the end of lab you will get a 404 error}.
+15)Now its time to install osTicket v1.15.8.Download osTicket from the installtion files folder.Extract and copy the "upload" folder to C:\\inetub\wwwroot.Rename "upload" file to "osTicket".
+
+ - Name has to be "osTicket" spelled exactly the same or at the end of lab you will get a 404 error at the end of lab.
 
 -Reload the IIS again.
 
-16)On the IIS page go to sites->default->os ticket- on the right side of page ,click "Browse *80".
+16)On the IIS page go to sites->default->osTicket- on the right side of page ,click "Browse *80".
 
 <img src="https://i.imgur.com/G883nNR.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--Some extensions are not enabled on the OS Ticket browser.
+-Some extensions are not enabled on the osTicket browser.
 
 <img src="https://i.imgur.com/XWbtyB6.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--To enable the extensions-Go back to the IIS,sites->default->os ticket- double click PHP Manager-Click"Enable or Disable an extension.
+-To enable the extensions-Go back to the IIS,sites->default->osTicket- double click PHP Manager-Click"Enable or Disable an extension.
 
 <img src="https://i.imgur.com/Nbo8wOL.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
@@ -127,7 +128,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img src="https://i.imgur.com/aLyCZMY.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
-17)Once we have those extensions enabled in IIS,we are going to want to rename one of the files in our OS Ticket folder.Go into the file explorer and search for C:\inetpub\wwwroot\os ticket\include\ost-sampleconfig.php
+17)Once we have those extensions enabled in IIS,we are going to want to rename one of the files in our osTicket folder.Go into the file explorer and search for C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 
 -We are going to rename the ost-sampleconfig.php to ost-config.php
 
@@ -171,11 +172,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 23)Once we are connected to the session we will go back to the browser to finish setting everything up.Under the database settings in the browser the username will be"root" and the password will be"Password1".
 
-24)We will now create a new database within HeidiSQL.In Heidi right click on the left side where is says"Unnamed",select "create new",and then select"database".Name the new database OS Ticket.Once we have the new database setup go back to the OS Ticket browserand under MySQL database type in OS Ticket.
+24)We will now create a new database within HeidiSQL.In Heidi right click on the left side where is says"Unnamed",select "create new",and then select"database".Name the new database osTicket.Once we have the new database setup go back to the osTicket browserand under MySQL database type in osTicket.
 
 <img src="https://i.imgur.com/EpsV0Gr.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
-25)The last step is to do some clean up.We will want to delete the setup folderin our system. Delete:C:\inetpub\wwwwroot\os ticket\setup. Only delete the setup folder and nothing else.
+25)The last step is to do some clean up.We will want to delete the setup folderin our system. Delete:C:\inetpub\wwwwroot\osTicket\setup. Only delete the setup folder and nothing else.
 
 26)We then will want to set the permissions back to "Read" only in the ost-config.php file.
 
