@@ -36,24 +36,24 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 3) Once you have created your Virtual Machine you will want to connect to it by opening your (RDC) Remote Desktop Connection tool.
 4) Copy and paste the public ip address of the (VM) you setup. Login by using the username and password you setup when making the (VM).
 <p>
-<img src=https://i.imgur.com/b4U8Aec.png
+<img src=https://i.imgur.com/b4U8Aec.png.png height="50%" width="50%" alt="Disk Sanitization Steps"/>
 <p>
   
 5)Once you have connected to the (VM) you will want to go to your control panel.From there open Programs, then Turn Windows Features On or Off.
 <p>
 
-<img src=https://i.imgur.com/nYUueMt.png.png height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/nYUueMt.png.png height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <p>
 
 6)You will want to install/enable Internet Information Services (IIS) in Windows with CGI and Common HTTP Features.
 
-  -World Wide Web-> Application Development->[x] CGI,[x] Common HTTP Features. *note make sure all common http features are checked.
+  - World Wide Web-> Application Development->[x] CGI,[x] Common HTTP Features. *note make sure all common http features are checked.
 
   
-<img src=https://i.imgur.com/8Aa1DZW.png.png height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/8Aa1DZW.png.png height="600%" width="60%" alt="Disk Sanitization Steps"/>
 
 
-  -To make sure the IIS is installed / enabled go to a browser of your choice and search for 127.0.0.1 It should look something like this.
+ - To make sure the IIS is installed / enabled go to a browser of your choice and search for 127.0.0.1 It should look something like this.
   
 <img src="https://i.imgur.com/5cE7B8R.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
@@ -66,9 +66,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 10)From the installtion files, download PHP 7.3.8 (PHP-7.3.8-nts-win32-vc15-x866.zip) and unzip the contents into C:\PHP
 
-!! Attention !! If this happens, choose to"Keep" the file: 
+ !! Attention !! If this happens, choose to"Keep" the file: 
 
-<img src="https://i.imgur.com/sYQQREy.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/sYQQREy.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 11)Once you have downloaded and extracted the zip file into the PHP folder on the C:\ Drive,download and install the VC_redist.x86.exe from the installtion files.Go through the setup wizard to finish setting up and installing the VC_redist.x86.exe
 
@@ -81,78 +81,75 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 13)Now that we have downloaded and installed the files,we now want to search for (IIS) in the windows search bar.Open (IIS) as an adminstatrator.
 
 
-<img src="https://i.imgur.com/CHCT6xh.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/CHCT6xh.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 14)We will now want to register PHP from within (IIS).Click on the PHP Manager.
 
 
--Register new PHP Version.
+ - Register new PHP Version.
 
 <br />
 <img src="https://i.imgur.com/Yj6Kn49.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--You will now need to prodive a path to the PHP executable file (php-cgi.exe).Go to the C:\ Drive -> PHP -> click on the(php-cgi) file.
+ - You will now need to prodive a path to the PHP executable file (php-cgi.exe).Go to the C:\ Drive -> PHP -> click on the(php-cgi) file.
 
 
 <img src="https://i.imgur.com/9Z3LfF1.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--Restart the IIS server.
+ - Restart the IIS server.
 
-<img src="https://i.imgur.com/wf8aZ2w.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/wf8aZ2w.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 15)Now its time to install osTicket v1.15.8.Download osTicket from the installtion files folder.Extract and copy the "upload" folder to C:\\inetub\wwwroot.Rename "upload" file to "osTicket".
 
  - Name has to be "osTicket" spelled exactly the same or at the end of lab you will get a 404 error at the end of lab.
-
--Reload the IIS again.
+ - Reload the IIS again.
 
 16)On the IIS page go to sites->default->osTicket- on the right side of page ,click "Browse *80".
 
-<img src="https://i.imgur.com/G883nNR.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/G883nNR.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 -Some extensions are not enabled on the osTicket browser.
 
-<img src="https://i.imgur.com/XWbtyB6.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/XWbtyB6.png.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 -To enable the extensions-Go back to the IIS,sites->default->osTicket- double click PHP Manager-Click"Enable or Disable an extension.
 
-<img src="https://i.imgur.com/Nbo8wOL.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Nbo8wOL.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 -We will want to enable 3 extensions from here:
 
--php_imap.dll
+ - php_imap.dll
+ - php_intl.dll
+ - php_opcache.dll
+   
 
--php_intl.dll
-
--php_opcache.dll
-
-<img src="https://i.imgur.com/aLyCZMY.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/aLyCZMY.png.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 
 17)Once we have those extensions enabled in IIS,we are going to want to rename one of the files in our osTicket folder.Go into the file explorer and search for C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
 
--We are going to rename the ost-sampleconfig.php to ost-config.php
+ - We are going to rename the ost-sampleconfig.php to ost-config.php
 
 18)Now that we have renamed the file,right click on the file and go to properties.From there click security,advanced,and disable the inheritance.We will select Remove all inherited permissions from the object.
 
--Now we add new permissions
-
--Click add
+ - Now we add new permissions
+ - Click add
 
 <img src="https://i.imgur.com/b90NhHK.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--Select a principle
+ - Select a principle
 
 <img src="https://i.imgur.com/x1ELnYv.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--Type "Everyone" in the box.
+ - Type "Everyone" in the box.
 
 <img src="https://i.imgur.com/E5PhpF2.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--Make sure Full Control and all the other boxes are checked
+ - Make sure Full Control and all the other boxes are checked
 
 <img src="https://i.imgur.com/RW7x2HU.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
--Click Apply and Ok
+ - Click Apply and Ok
 
 <img src="https://i.imgur.com/LFqOzoa.png.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 
