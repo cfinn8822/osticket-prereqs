@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-In the this demonstration I am going to create a Resource group and Virtual Machine to use for the purpose of installing osTicket. I am going to list my prerequisites for installing the open-source help desk, as well as listing all the steps you need in order to do the same.
+In the this demonstration I am going to create a Resource group and Virtual Machine to use for the purpose of installing osTicket. I am going to list my prerequisites for installing the open-source help desk, as well as listing all the steps you need in order to install.
  
 
 
