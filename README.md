@@ -20,7 +20,7 @@ In the this demonstration I am going to create a Resource group and Virtual Mach
 <h2>List of Prerequisites</h2>
 
 - Fundamentals from my previous project (<a href="https://github.com/cfinn8822/azure-start#-create-a-resource-group">Azure setup</a>)
-- Azure Virtual Machine
+- Azure Virtual Machine (Windowns 10 Pro)
 - Internet Information Services (IIS)
 - PHP Manager
 - Rewrite Module
@@ -33,10 +33,10 @@ In the this demonstration I am going to create a Resource group and Virtual Mach
 
 <h2>Installation Steps</h2>
 
-1) The first thing you are going to want to do is create a Resource Group and Virtual Machine by going to "https://portal.azure.com".  
-   - "Resource Group" can be named whatever you would like for this example
-        
-2) Setup your Virtual Machine with Windows 10 pro, version 22h2.Note you will want to create the (VM) with atleast 2 Vcpus and 8 to 16 gbs of memory.
+1) The first thing you are going to want to do is create a Resource Group and Virtual Machine.  
+   - "Resource Group" can be named how ever you choose. (My example is os-ticket)
+   - "Virtual Machine can be named how ever you choose. (My example is VM1)  
+2) Setup your Virtual Machine with Windows 10 pro, version 22h2. Note you will want to create the (VM) with atleast 2 Vcpus and 8 to 16 gbs of memory.
 3) Once you have created your Virtual Machine you will want to connect to it by opening your (RDC) Remote Desktop Connection tool.
    - You can find the "Remote Desktop Connection" tool by clicking the start button or windows tab and typing it into the search bar.
      
