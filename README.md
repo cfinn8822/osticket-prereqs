@@ -19,7 +19,7 @@ In the this demonstration I am going to create a Resource group and Virtual Mach
 
 <h2>List of Prerequisites</h2>
 
-- Fundamentals from my pervious project 
+- Fundamentals from my previous project 
 - Azure Virtual Machine
 - Internet Information Services (IIS)
 - PHP Manager
