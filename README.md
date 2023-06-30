@@ -40,19 +40,23 @@ In the this demonstration I am going to create a Resource group and Virtual Mach
 3) Once you have created your Virtual Machine you will want to connect to it by opening your (RDC) Remote Desktop Connection tool.
    - You can find the "Remote Desktop Connection" tool by clicking the start button or windows tab and typing it into the search bar.
      
+<img src=https://i.imgur.com/wg1EnOR.png.png height="40%" width="70%" alt="Disk Sanitization Steps"/>
+
 4) Copy and paste the public ip address of the (VM) you setup. Login by using the username and password you setup when making the (VM).
 
-<img src=https://i.imgur.com/b4U8Aec.png.png height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/b4U8Aec.png.png height="70%" width="70%" alt="Disk Sanitization Steps"/>
  
 5)Once you have connected to the (VM) you will want to go to your control panel.From there open Programs, then Turn Windows Features On or Off.
 
-<img src=https://i.imgur.com/nYUueMt.png.png height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/1qwiwVK.png.png height="40%" width="60%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/JNqDynW.png.png height="40%" width="60%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/tmPbN02.png.png height="30%" width="60%" alt="Disk Sanitization Steps"/>
 
 6)You will want to install/enable Internet Information Services (IIS) in Windows with CGI and Common HTTP Features.
 
   - World Wide Web-> Application Development->[x] CGI,[x] Common HTTP Features. *note make sure all common http features are checked.
   
-<img src=https://i.imgur.com/8Aa1DZW.png.png height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src=https://i.imgur.com/8Aa1DZW.png.png height="60%" width="80%" alt="Disk Sanitization Steps"/>
 
  - To make sure the IIS is installed / enabled go to a browser of your choice and search for 127.0.0.1 It should look something like this.
   
